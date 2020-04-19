@@ -70,6 +70,10 @@ TEMPLATES = [
     },
 ]
 
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, 'templates'),)
+
 WSGI_APPLICATION = 'TicTacToe.wsgi.application'
 
 
